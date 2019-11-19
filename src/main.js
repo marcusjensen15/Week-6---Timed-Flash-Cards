@@ -1,4 +1,4 @@
-import { Cards, MyCard, showCards } from  './dice-game.js';
+import { Cards, MyCard } from  './dice-game.js';
 import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -20,15 +20,33 @@ cards.addCard(myCard2.backSide);
 console.log(cards);
 
 
- showCards = (deck) => {
-   return "hello";
-  // for(let i = 0; i < deck.length; i ++){
-  //   console.log("in function");
-  //   setTimeout(function() { alert(deck[i]) }, 2000);
-  //
-  // }
+let howdy = [10,20,30];
+
+//  const showCards = deck => {
+//    let i = 0;
+//     while (i < deck.length) {
+//       setTimeout(function() {
+//         alert(deck[i]);
+//         i += 1;
+//       }, 2000);
+//     }
+//
+//
+// };
+
+
+const showCards = deck => {
+   for(let i =0; i < deck.length; i++) {
+
+     setTimeout(function() {
+       alert(i) }, 5000);
+   }
+
+
 };
 
-console.log(showCards(cards.completedCards));
-//
-console.log("hi");
+// console.log(showCards(10));
+
+
+
+showCards(howdy);
