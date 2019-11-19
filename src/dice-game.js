@@ -32,3 +32,12 @@ export class Cards {
   // }
 
 }
+
+export showCards = (deck) => {
+  return "hello";
+ // for(let i = 0; i < deck.length; i ++){
+ //   console.log("in function");
+ //   setTimeout(function() { alert(deck[i]) }, 2000);
+ //
+ // }
+};
