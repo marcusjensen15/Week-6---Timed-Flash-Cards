@@ -1,40 +1,8 @@
-// export function test() {
-//   console.log('this is the back-end');
-// } test();
-
-//Example code for running tests in jest.test.js//
-
-// export var MyObject = function(number1,number2,number3){
-//
-//   this.number1 = number1,
-//   this.number2= number2,
-//   this.number3 = number3
-//
-// }
-//
-// MyObject.prototype.multiplyNumbers = function() {
-//   var multiply = this.number1 * this.number2;
-//   return multiply;
-// }
-//
-// export var MyObject2 = function(number1,number2,number3){
-//
-//   this.number1 = number1,
-//   this.number2= number2,
-//   this.number3 = number3
-//
-// }
-//
-// MyObject2.prototype.multiplyNumbers = function() {
-//   var multiply = this.number1 + this.number2;
-//   return multiply;
-// }
-
 export class MyCard {
   constructor(frontSide,backSide){
     this.frontSide = frontSide;
     this.backSide = backSide;
-    this.cardSet = [this.frontSide,this.backSide];
+
   }
 
 }
@@ -43,13 +11,24 @@ export class Cards {
   constructor(){
 
     this.completedCards = [];
+    this.processedCards = [];
+
   }
   addCard(card){
     this.completedCards.push(card);
 
   }
-
+  // selectWholeCard(beef){
+  //   let returnArray = [];
+  //   for(let j=0; j < beef.length;j++){
+  //     let innerArrayLength = beef[j].length;
+  //     for (let i = 0; i < innerArrayLength; i++){
+  //       let here = beef[j][i]+ "1";
+  //       returnArray.push(here);
+  //     }
+  //
+  //   }
+  //   this.processedCards.push(returnArray);
+  // }
 
 }
-
-//Example code for running tests in jest.test.js//
